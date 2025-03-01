@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #0482ff;
+    --secondary-color: #228cd2;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #071b2f;
+    --success-color: #27ae60;
+    --text-color: #333;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+body {
+    background-color: #f5f7fa;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+.register-form {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* Headings */
+h1, h2 {
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: #0015ff;
+}
+
+/* Form Styling */
+.register-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://via.placeholder.com/1600x900?text=House+Rental+System');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.register-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.register-form:hover {
+    transform: scale(1.02);
+}
+
+.register-form h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 7px;
+    margin-top: 1px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.3s ease-in-out;
+}
+
+.register-form input[type="text"]:focus,
+.register-form input[type="email"]:focus,
+.register-form input[type="password"]:focus,
+.register-form input[type="confirm password"]:focus {
+    border: 2px solid #0000ff;
+    outline: none;
+}
+
+.register-form input[type="submit"] {
+    color: white;
+    padding: 9px;
+    margin-top: 23px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #0056b3;
+    transition: transform 0.3s ease-in-out;
+}
+
+.register-form input[type="submit"]:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Form Footer */
+.form-footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.form-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}

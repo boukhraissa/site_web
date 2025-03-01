@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="REDA BOUKHRAISSA">
+        <meta name="description" content="Find and rent your dream house at affordable prices through our House Rental System">
+        <meta name="keywords" content="house rental, property rental, rent homes, affordable houses, luxury houses">
+        
+        <title>House Rental System | Find Your Dream Home</title>
+        
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        <!-- Main stylesheet -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        
+        <!-- Slider resources -->
+        <link rel="stylesheet" type="text/css" href="assets/slider/engine1/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        <!-- Header Section -->
+        <header class="header">
+            <div class="wrapper">
+                <div class="logo-container">
+                    <h1>HOUSE RENTAL SYSTEM</h1>
+                </div>
+                <div class="user-actions">
+                    <a href="user/login.html" class="btn btn-login"><i class="fas fa-sign-in-alt"></i> Log In</a>
+                    <a href="user/register.html" class="btn btn-register"><i class="fas fa-user-plus"></i> Register</a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Navigation Menu -->
+        <nav class="menu">
+            <div class="wrapper">
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li class="active"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="houses.html"><i class="fas fa-building"></i> Houses</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                </ul>
+                <div class="search-container">
+                    <form action="search.html" method="GET">
+                        <input type="text" name="query" placeholder="Search for houses...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Hero Slider -->
+        <div class="slider">
+            <div class="wrapper">
+                <!-- Start WOWSlider.com BODY section -->
+                <div id="wowslider-container1">
+                <div class="ws_images"><ul>
+                		<li><img src="assets/slider/data1/images/house03.jpg" alt="House Rental System" title="House Rental System" id="wows1_0"/></li>
+                		<li><a href="http://wowslider.net"><img src="assets/slider/data1/images/pexelsphoto186077.jpg" alt="jquery carousel" title="Luxury Houses for Rent" id="wows1_1"/></a></li>
+                		<li><img src="assets/slider/data1/images/39f6e0639465c7e01eaa79e26ada2a48.jpg" alt="Rent Houses at Affordable Price" title="Rent Houses at Affordable Price" id="wows1_2"/></li>
+                	</ul></div>
+                	<div class="ws_bullets"><div>
+                		<a href="#" title="House Rental System"><span><img src="assets/slider/data1/tooltips/house03.jpg" alt="House Rental System"/>1</span></a>
+                		<a href="#" title="Luxury Houses for Rent"><span><img src="assets/slider/data1/tooltips/pexelsphoto186077.jpg" alt="Luxury Houses for Rent"/>2</span></a>
+                		<a href="#" title="Rent Houses at Affordable Price"><span><img src="assets/slider/data1/tooltips/39f6e0639465c7e01eaa79e26ada2a48.jpg" alt="Rent Houses at Affordable Price"/>3</span></a>
+                	</div></div>
+                <div class="ws_shadow"></div>
+                </div>	
+                <script type="text/javascript" src="assets/slider/engine1/wowslider.js"></script>
+                <script type="text/javascript" src="assets/slider/engine1/script.js"></script>
+                <!-- End WOWSlider.com BODY section -->
+            </div>
+        </div>
+        <!-- Quick Search Filters -->
+        <section class="search-filters">
+            <div class="wrapper">
+                <form class="filter-form">
+                    <div class="filter-group">
+                        <label for="location">Location</label>
+                        <select id="location" name="location">
+                            <option value="">All Locations</option>
+                            <option value="kathmandu">Kathmandu</option>
+                            <option value="bhaktapur">Bhaktapur</option>
+                            <option value="lalitpur">Lalitpur</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="property-type">Property Type</label>
+                        <select id="property-type" name="type">
+                            <option value="">All Types</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="house">House</option>
+                            <option value="villa">Villa</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="price-range">Price Range</label>
+                        <select id="price-range" name="price">
+                            <option value="">Any Price</option>
+                            <option value="budget">Budget (Under $500)</option>
+                            <option value="mid">Mid-Range ($500-$1000)</option>
+                            <option value="luxury">Luxury (Above $1000)</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="bedrooms">Bedrooms</label>
+                        <select id="bedrooms" name="bedrooms">
+                            <option value="">Any</option>
+                            <option value="1">1+ Bedroom</option>
+                            <option value="2">2+ Bedrooms</option>
+                            <option value="3">3+ Bedrooms</option>
+                            <option value="4">4+ Bedrooms</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-search">Find Houses</button>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Recently Added Houses -->
+        <section class="main">
+            <div class="wrapper">
+                <div class="section-header">
+                    <h2>Recently Added</h2>
+                    <a href="images/house.jpg" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="houses-grid">
+                    <div class="house-card">
+                        <div class="house-image">
+                            <img src="images/house.jpg" alt="Modern Family Home">
+                            <div class="label new">New</div>
+                            <button class="favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="house-details">
+                            <h3 class="house-title">Modern Family Home</h3>
+                            <p class="house-location"><i class="fas fa-map-marker-alt"></i> Sano Thimi, Bhaktapur</p>
+                            <div class="house-features">
+                                <span><i class="fas fa-bed"></i> 3 Beds</span>
+                                <span><i class="fas fa-bath"></i> 2 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 1500 sq.ft</span>
+                            </div>
+                            <div class="house-price">$850/month</div>
+                            <div class="house-actions">
+                                <a href="images/house.jpg" class="btn btn-details">Details</a>
+                                <a href="images/house.jpg class="btn btn-book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="house-card">
+                        <div class="house-image">
+                            <img src="images/house2.jpg" alt="Cozy Studio Apartment">
+                            <div class="label new">New</div>
+                            <button class="favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="house-details">
+                            <h3 class="house-title">Cozy Studio Apartment</h3>
+                            <p class="house-location"><i class="fas fa-map-marker-alt"></i> Kalanki, Kathmandu</p>
+                            <div class="house-features">
+                                <span><i class="fas fa-bed"></i> 1 Bed</span>
+                                <span><i class="fas fa-bath"></i> 1 Bath</span>
+                                <span><i class="fas fa-ruler-combined"></i> 650 sq.ft</span>
+                            </div>
+                            <div class="house-price">$400/month</div>
+                            <div class="house-actions">
+                                <a href="house-details.html?id=2" class="btn btn-details">Details</a>
+                                <a href="book.html?id=2" class="btn btn-book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="house-card">
+                        <div class="house-image">
+                            <img src="images/house3.jpg" alt="Spacious Family Villa">
+                            <div class="label new">New</div>
+                            <button class="favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="house-details">
+                            <h3 class="house-title">Spacious Family Villa</h3>
+                            <p class="house-location"><i class="fas fa-map-marker-alt"></i> Balaju, Kathmandu</p>
+                            <div class="house-features">
+                                <span><i class="fas fa-bed"></i> 4 Beds</span>
+                                <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 2200 sq.ft</span>
+                            </div>
+                            <div class="house-price">$1200/month</div>
+                            <div class="house-actions">
+                                <a href="house-details.html?id=3" class="btn btn-details">Details</a>
+                                <a href="book.html?id=3" class="btn btn-book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="house-card">
+                        <div class="house-image">
+                            <img src="images/house4.jpg" alt="Downtown Apartment">
+                            <div class="label new">New</div>
+                            <button class="favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="house-details">
+                            <h3 class="house-title">Downtown Apartment</h3>
+                            <p class="house-location"><i class="fas fa-map-marker-alt"></i> Thamel, Kathmandu</p>
+                            <div class="house-features">
+                                <span><i class="fas fa-bed"></i> 2 Beds</span>
+                                <span><i class="fas fa-bath"></i> 1 Bath</span>
+                                <span><i class="fas fa-ruler-combined"></i> 950 sq.ft</span>
+                            </div>
+                            <div class="house-price">$750/month</div>
+                            <div class="house-actions">
+                                <a href="house-details.html?id=4" class="btn btn-details">Details</a>
+                                <a href="assets/slider/data1/images/39f6e0639465c7e01eaa79e26ada2a48.jpg" class="btn btn-book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Luxury Houses Section -->
+                <div class="section-header">
+                    <h2>Luxury Houses</h2>
+                    <a href="houses.html?category=luxury" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="houses-grid">
+                    <div class="house-card premium">
+                        <div class="house-image">
+                            <img src="assets/slider/data1/images/39f6e0639465c7e01eaa79e26ada2a48.jpg" alt="Luxury Penthouse">
+                            <div class="label luxury">Luxury</div>
+                            <button class="favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="house-details">
+                            <h3 class="house-title">Luxury Penthouse</h3>
+                            <p class="house-location"><i class="fas fa-map-marker-alt"></i> Durbar Marg, Kathmandu</p>
+                            <div class="house-features">
+                                <span><i class="fas fa-bed"></i> 3 Beds</span>
+                                <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 2800 sq.ft</span>
+                            </div>
+                            <div class="house-price">$2200/month</div>
+                            <div class="house-actions">
+                                <a href="house-details.html?id=5" class="btn btn-details">Details</a>
+                                <a href="book.html?id=5" class="btn btn-book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="house-card premium">
+                        <div class="house-image">
+                            <img src="images/luxury2.jpg" alt="Executive Villa">
+                            <div class="label luxury">Luxury</div>
+                            <button class="favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="house-details">
+                            <h3 class="house-title">Executive Villa</h3>
+                            <p class="house-location"><i class="fas fa-map-marker-alt"></i> Budhanilkantha, Kathmandu</p>
+                            <div class="house-features">
+                                <span><i class="fas fa-bed"></i> 5 Beds</span>
+                                <span><i class="fas fa-bath"></i> 4 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 3500 sq.ft</span>
+                            </div>
+                            <div class="house-price">$3000/month</div>
+                            <div class="house-actions">
+                                <a href="assets/slider/data1/images/39f6e0639465c7e01eaa79e26ada2a48.jpg" class="btn btn-details">Details</a>
+                                <a href="book.html?id=6" class="btn btn-book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="house-card premium">
+                        <div class="house-image">
+                            <img src="images/luxury3.jpg" alt="Garden Estate">
+                            <div class="label luxury">Luxury</div>
+                            <button class="favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="house-details">
+                            <h3 class="house-title">Garden Estate</h3>
+                            <p class="house-location"><i class="fas fa-map-marker-alt"></i> Godavari, Lalitpur</p>
+                            <div class="house-features">
+                                <span><i class="fas fa-bed"></i> 4 Beds</span>
+                                <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 2700 sq.ft</span>
+                            </div>
+                            <div class="house-price">$2500/month</div>
+                            <div class="house-actions">
+                                <a href="house-details.html?id=7" class="btn btn-details">Details</a>
+                                <a href="book.html?id=7" class="btn btn-book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="house-card premium">
+                        <div class="house-image">
+                            <img src="images/luxury4.jpg" alt="Modern Mansion">
+                            <div class="label luxury">Luxury</div>
+                            <button class="favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="house-details">
+                            <h3 class="house-title">Modern Mansion</h3>
+                            <p class="house-location"><i class="fas fa-map-marker-alt"></i> Jhamsikhel, Lalitpur</p>
+                            <div class="house-features">
+                                <span><i class="fas fa-bed"></i> 6 Beds</span>
+                                <span><i class="fas fa-bath"></i> 5 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 4000 sq.ft</span>
+                            </div>
+                            <div class="house-price">$3500/month</div>
+                            <div class="house-actions">
+                                <a href="house-details.html?id=8" class="btn btn-details">Details</a>
+                                <a href="book.html?id=8" class="btn btn-book">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Cities Section -->
+        <section class="featured-cities">
+            <div class="wrapper">
+                <div class="section-header">
+                    <h2>Featured Locations</h2>
+                </div>
+                <div class="cities-grid">
+                    <a href="houses.html?location=kathmandu" class="city-card">
+                        <div class="city-image">
+                            <img src="images/kathmandu.jpg" alt="Kathmandu">
+                        </div>
+                        <div class="city-overlay">
+                            <h3>Kathmandu</h3>
+                            <p>45 Properties</p>
+                        </div>
+                    </a>
+                    <a href="houses.html?location=bhaktapur" class="city-card">
+                        <div class="city-image">
+                            <img src="images/bhaktapur.jpg" alt="Bhaktapur">
+                        </div>
+                        <div class="city-overlay">
+                            <h3>Bhaktapur</h3>
+                            <p>28 Properties</p>
+                        </div>
+                    </a>
+                    <a href="houses.html?location=lalitpur" class="city-card">
+                        <div class="city-image">
+                            <img src="images/lalitpur.jpg" alt="Lalitpur">
+                        </div>
+                        <div class="city-overlay">
+                            <h3>Lalitpur</h3>
+                            <p>32 Properties</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="wrapper">
+                <div class="cta-content">
+                    <h2>List Your Property With Us</h2>
+                    <p>Become a landlord and start earning from your property today</p>
+                    <a href="list-property.html" class="btn btn-cta">List Your Property</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>House Rental System</h3>
+                        <p>Finding you the perfect home since 2017</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="houses.html">Houses</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Property Types</h4>
+                        <ul>
+                            <li><a href="houses.html?type=apartment">Apartments</a></li>
+                            <li><a href="houses.html?type=house">Houses</a></li>
+                            <li><a href="houses.html?type=villa">Villas</a></li>
+                            <li><a href="houses.html?type=commercial">Commercial</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact Info</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Kathmandu, Nepal</li>
+                            <li><i class="fas fa-phone"></i> +977 1234567890</li>
+                            <li><i class="fas fa-envelope"></i> info@houserentalsystem.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 House Rental System. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- JavaScript Files -->
+        <script src="assets/js/slider.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
